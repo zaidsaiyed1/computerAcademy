@@ -1,1 +1,10 @@
 <h1>Form data submitted successfully!</h1>
+
+{% block content %}
+<h1>Heart Disease Prediction Result</h1>
+{% if 'heart_damage==True' %}
+  <p>The heart is damaged.</p>
+{% else %}
+  <p>The heart is not damaged.</p>
+{% endif %}
+{% endblock %}

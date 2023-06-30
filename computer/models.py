@@ -19,7 +19,7 @@ class user_details(models.Model):
     restecg = models.IntegerField()
     thalach = models.IntegerField()
     exng = models.IntegerField()
-    oldpeak = models.IntegerField()
+    oldpeak = models.FloatField()
     slp = models.IntegerField()
     ca = models.IntegerField()
     thal = models.IntegerField()
