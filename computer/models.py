@@ -13,17 +13,15 @@ class user_details(models.Model):
     age = models.PositiveIntegerField()
     sex = models.PositiveIntegerField()
     cp = models.IntegerField()
-    trestbps = models.IntegerField()
-    chol = models.IntegerField()
-    fbs = models.IntegerField()
-    restecg = models.IntegerField()
-    thalach = models.IntegerField()
-    exng = models.IntegerField()
-    oldpeak = models.FloatField()
-    slp = models.IntegerField()
-    ca = models.IntegerField()
-    thal = models.IntegerField()
-    num = models.IntegerField()
+    diabi = models.IntegerField()
+    sob = models.IntegerField()
+    bps = models.IntegerField()
+    fati = models.IntegerField()
+    hr = models.IntegerField()
+    nov = models.IntegerField()
+    ioh = models.IntegerField()
+    es = models.IntegerField()
+
 
 
 class Meta:
