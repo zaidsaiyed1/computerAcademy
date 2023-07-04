@@ -17,11 +17,10 @@ class user_details(models.Model):
     sob = models.IntegerField()
     bps = models.IntegerField()
     fati = models.IntegerField()
-    hr = models.IntegerField()
     nov = models.IntegerField()
     ioh = models.IntegerField()
     es = models.IntegerField()
-
+    hr = models.IntegerField()
 
 
 class Meta:
