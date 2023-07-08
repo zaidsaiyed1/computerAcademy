@@ -34,7 +34,9 @@ body {
   margin: 0 auto;
   position: relative;
 }
-
+#contact input[type="text"],
+#contact input[type="text"],
+#contact input[type="text"],
 #contact input[type="number"],
 #contact input[type="text"],
 #contact input[type="text"],
@@ -82,8 +84,11 @@ fieldset {
 label
 {
   font-size:20px;
+  color: rgb(0, 0, 0);
 }
-
+#contact input[type="text"],
+#contact input[type="text"],
+#contact input[type="text"],
 #contact input[type="number"],
 #contact input[type="text"],
 #contact input[type="text"],
@@ -103,7 +108,9 @@ label
   margin: 0 0 5px;
   padding: 10px;
 }
-
+#contact input[type="text"]:hover,
+#contact input[type="text"]:hover,
+#contact input[type="text"]:hover,
 #contact input[type="number"]:hover,
 #contact input[type="text"]:hover,
 #contact input[type="text"]:hover,
@@ -195,45 +202,57 @@ label
                                             <h3>Heart Disease Prediction System</h3>
                                             <h3>Please Enter Your Answer In Yes/ No..</h3>
                                             <fieldset>
+                                              <label>Enter Your City:</label>
+                                              <input placeholder="City" type="text" tabindex="2" name="ucity" required>
+                                            </fieldset>
+                                            <fieldset>
+                                              <label>Enter Your State:</label>
+                                              <input placeholder="State" type="text" tabindex="2" name="ustate" required>
+                                            </fieldset>
+                                            <fieldset>
+                                              <label>Enter Your Country:</label>
+                                              <input placeholder="Country" type="text" tabindex="2" name="ucountry" required>
+                                            </fieldset>
+                                            <fieldset>
                                               <label>Enter Your Age:</label>
                                               <input placeholder="Age" type="number" tabindex="2" name="uage" required>
                                             </fieldset>
                                             <fieldset>
                                               <label>Enter Your Gender:</label>
-                                              <input placeholder="Gender" type="text" tabindex="3" name="usex" required>
+                                              <input placeholder="Gender" type="text" tabindex="3" name="usex" >
                                             </fieldset>
                                             <fieldset>
                                               <label>Have you Ever Experienced Chest pain Or Discomfort?:</label>
-                                              <input placeholder="Chest pain" type="text" name="ucp" tabindex="4" required>
+                                              <input placeholder="Chest pain" type="text" name="ucp" tabindex="4" >
                                             </fieldse>
                                             <fieldset>
                                               <label>You Are Suffering Form Diabetic?:</label>
-                                              <input placeholder="Diabetes" type="text" name="udiabi" tabindex="4" required>
+                                              <input placeholder="Diabetes" type="text" name="udiabi" tabindex="4" >
                                             </fieldse>
                                             <fieldset>
                                               <label>You Feel Shortness Of Breath?:</label>
-                                              <input placeholder="Difficulty breathing, feeling like you can't get enough air, or experiencing breathlessness during normal activities" type="text" name="usob" tabindex="4" required>
+                                              <input placeholder="Difficulty breathing, feeling like you can't get enough air, or experiencing breathlessness during normal activities" type="text" name="usob" tabindex="4" >
                                             </fieldse>
                                             <label>You have Blood Presure?:</label>
-                                            <input placeholder="Blood Presure" type="text" name="ubps" tabindex="4" required>
+                                            <input placeholder="Blood Presure" type="text" name="ubps" tabindex="4" >
                                             </fieldse>
                                              <label>You Are Suffering Form Fatigue?:</label>
-                                             <input placeholder="Fatigue:Persistent tiredness or lack of energy that is not relieved by rest or sleep." type="text" name="ufati" tabindex="4" required>
+                                             <input placeholder="Fatigue:Persistent tiredness or lack of energy that is not relieved by rest or sleep." type="text" name="ufati" tabindex="4" >
                                             </fieldse>
                                             </fieldse>
                                               <label>Have You Feel Nausea or vomiting?:</label>
-                                              <input placeholder="Feeling sick to the stomach or vomiting without a clear cause." type="text" name="unov" tabindex="4" required>
+                                              <input placeholder="Feeling sick to the stomach or vomiting without a clear cause." type="text" name="unov" tabindex="4" >
                                             </fieldse>
                                             <label>Have You Feel Indigestion or heartburn?:</label>
-                                            <input placeholder="Discomfort or burning sensation in the chest  or upper abdomen, often after eating." type="text" name="uioh" tabindex="4" required>
+                                            <input placeholder="Discomfort or burning sensation in the chest  or upper abdomen, often after eating." type="text" name="uioh" tabindex="4" >
                                             </fieldse>
                                             </fieldse>
                                               <label>Have You Feel Excessive sweating?:</label>
-                                              <input placeholder="Sweating that occurs without any apparent reason or is unrelated to physical exertion or temperature" type="text" name="ubps" tabindex="4" required>
+                                              <input placeholder="Sweating that occurs without any apparent reason or is unrelated to physical exertion or temperature" type="text" name="ues" tabindex="4" >
                                             </fieldse>
                                             </fieldse>
                                                <label>Has there been any history of heart disease in the past?:</label>
-                                               <input placeholder="Any Type of Heart disease.." type="text" name="ubps" tabindex="4" required>
+                                               <input placeholder="Any Type of Heart disease.." type="text" name="uhhd" tabindex="4" >
                                             </fieldse>
                                             <fieldset>
                                               <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>

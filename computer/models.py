@@ -10,17 +10,20 @@ class Meta:
     db_table = "Supadmin"
 
 class user_details(models.Model):
-    age = models.PositiveIntegerField()
-    sex = models.PositiveIntegerField()
-    cp = models.IntegerField()
-    diabi = models.IntegerField()
-    sob = models.IntegerField()
-    bps = models.IntegerField()
-    fati = models.IntegerField()
-    nov = models.IntegerField()
-    ioh = models.IntegerField()
-    es = models.IntegerField()
-    hr = models.IntegerField()
+    city = models.CharField(max_length=10)
+    state = models.CharField(max_length=10)
+    country = models.CharField(max_length=10)
+    age = models.IntegerField()
+    sex = models.CharField(max_length=10)
+    cp = models.CharField(max_length=10)
+    diabi = models.CharField(max_length=10)
+    sob = models.CharField(max_length=10)
+    bps = models.CharField(max_length=10)
+    fati = models.CharField(max_length=10)
+    nov = models.CharField(max_length=10)
+    ioh = models.CharField(max_length=10)
+    es = models.CharField(max_length=10)
+    hhd = models.CharField(max_length=10)
 
 
 class Meta:
