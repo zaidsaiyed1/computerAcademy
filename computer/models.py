@@ -34,7 +34,7 @@ class user_data1(models.Model):
     ucountry = models.CharField(max_length=10, default='NUll')
     uage = models.IntegerField()
     usex = models.CharField(max_length=10, default='NUll')
-    uemail = models.EmailField(max_length=20, default='NUll')
+    uemail = models.EmailField(max_length=40, default='NUll')
     ufeedb = models.CharField(max_length=200, default='NUll')
 
 class Meta:
