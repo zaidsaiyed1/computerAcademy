@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+    {% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Heart-Disease-Prediction-System</title>
+    <link rel="stylesheet" href="/static/css/predictionForm.min.css">
+    <link rel="stylesheet" href="/static/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/vanilla-zoom.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
+
+<body>
+ 
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar navbar-light">
+        <div class="container"><a class="navbar-brand logo pb-lg-0 me-lg-5 pe-lg-0 active" href="/">Heart Disease Prediction System&nbsp;</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{%url 'home' %}">Prediction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{%url 'features'%}">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{%url 'about' %}">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{%url 'contact-us' %}">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page landing-page">
+        <section class="clean-block clean-hero" style="background-image:url(&quot;/static/img/system/heart.jpg&quot;);color:rgba(9, 162, 255, 0.85);">
+            <div class="text">
+                <h2>Heart Prediction System</h2>
+                <p>This System Will Predict You have heart Disease Or Not on Your Inputs</p><button class="btn btn-outline-light btn-lg" onclick="window.location.href = 'about/'" type="button">Read More</button>
+            </div>
+        </section>
+        <section class="clean-block clean-info dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Info</h2>
+                    <p>heart is very important part for our life we have to protect it from the disease.</p>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6"><img src="/static/img/CVD_NSHomepageWidget.jpg" width="532" height="408"></div>
+                    <div class="col-md-6">
+                        <h3>This System Will Help You In Your Heart Disease Prediction</h3>
+                        <div class="getting-started-info">
+                            <p>When you enter your Input in the form you will get the output base on that. And we are the Initialize stage We have To make this system more advanced in health care for heart</p>
+                        </div><button class="btn btn-outline-primary btn-lg" onclick="window.location.href = 'home/'" type="button">Make-Prediction</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clean-block about-us"></section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-lg-12">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="{%url 'home' %}">Pridiction</a></li>
+                        <li><a href="{%url 'about' %}">About Us</a></li>
+                        <li><a href="{%url 'contact-us' %}">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2023 Copyright Text</p>
+        </div>
+    </footer>
+   <script src="/staticbootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/js/baguetteBox.min.js"></script>
+    <script src="/static/js/vanilla-zoom.js"></script>
+    <script src="/static/js/theme.js"></script>
+</body>
+
+</html>

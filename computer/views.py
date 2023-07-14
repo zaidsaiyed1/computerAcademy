@@ -2,10 +2,20 @@ from django.shortcuts import render,redirect
 from django.http import request
 import csv
 import pandas as pd
-from .models import user_details
+from .models import user_details, user_data1
 # Create your views here.
+def index(request):
+     return render(request,'templates/index.html',{})
 def home(request):
      return render(request,'templates/home.html',{})
+def contactus(request):
+     return render(request,'templates/contact-us.html',{})
+def about(request):
+     return render(request,'templates/about.html',{})
+def features(request):
+     return render(request,'templates/features.html',{})
+def result(request):
+  return render(request, 'templates/result.html', {})
 def result1(request):
   return render(request, 'templates/result1.html', {})
 #this will read the csv file
@@ -84,7 +94,7 @@ def insertuser(request):
   ves = request.POST['ues'];
   vhhd = request.POST['uhhd'];
   us = user_details(city = vcity,state = vstate,country = vcountry,age=vage, sex=vsex, cp=vcp, diabi=vdiabi,fati=vfati, ioh=vioh, es=ves,nov=vnov, bps=vbps, sob=vsob, hhd=vhhd);
-  us.save() 
+  us.save(); 
   #if request.method == 'POST':
   user_data = {
             'ucity' : str(request.POST['ucity']),
@@ -106,11 +116,20 @@ def insertuser(request):
   return predict
  #return 
 
-#def predict_heart_damage(request):
-#  pass
-   # h =  
-   # return h
+def user_data(request):
+  #if request.method == 'POST':
+    udname =  request.POST['ucname'];
+    udage = request.POST['ucage'];
+    udsex = request.POST['ucsex'];
+    udcountry = request.POST['uccountry'];
+    udemail = request.POST['ucemail'];
+    udfeedb = request.POST['ucfeedback'];
+    u = user_data1(uname=udname,ucountry=udcountry,uage=udage,usex=udsex,uemail=udemail,ufeedb=udfeedb);
+    u.save();
+    return render(request,'templates/result.html', {})
 
-file_path = 'D:\\Nichetech\\Dataset\\new_data.csv'  # csv file path
+
+
+file_path = 'D:\\pythonpro\\computerAcademy\\Dataset\\new_data.csv'  # csv file path
 data = read_csv_file(file_path)
 

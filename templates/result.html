@@ -1,7 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" lang="english">
 
-{% block content %}
-<h1>Heart Disease Prediction Result</h1>
+              <head>
+                            <title>User details</title>
+                            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <link rel="stylesheet" href="/static/css/predictionForm.min.css">
+                            <link rel="stylesheet" href="/static/css/baguetteBox.min.css">
+                            <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+                            <link rel="stylesheet" href="/static/css/vanilla-zoom.min.css">
+                            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
+              </head>
+              <body>
+                            <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar navbar-light">
+                                          <div class="container"><a class="navbar-brand logo pb-lg-0 me-lg-5 pe-lg-0 active" href="/">Heart Disease Prediction System&nbsp;</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                                              <div class="collapse navbar-collapse" id="navcol-1">
+                                                  <ul class="navbar-nav ms-auto">
+                                                      <li class="nav-item"><a class="nav-link" href="{%url 'home' %}">Prediction</a></li>
+                                                      <li class="nav-item"><a class="nav-link" href="{%url 'features'%}">Features</a></li>
+                                                      <li class="nav-item"><a class="nav-link" href="{%url 'about' %}">About Us</a></li>
+                                                      <li class="nav-item"><a class="nav-link" href="{%url 'contact-us' %}">Contact Us</a></li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                             </nav>
+                 
+                 
 
-  <p>The heart is not damaged.</p>
+               <main class="page">
+                            <section class="clean-block features">
+                                  
+                               <div class="container">
+                               <div class="block-heading">
+                                <h2 class="text-info">feedback submitted....</h2>
+                                <p>Thanks for your support, And we wish you have Good - day and better health.... ❤️<br></p>
+                                </div>
+                                <h4>We Belive in good health...</h4>
+                                <div class="row justify-content-center">
+                                    <div class="col">
+                                        <p>We belive everyone have good health. When you have good health you feel joyfull,<br>And do work correctly....&nbsp;</p>
+                                    </div>
 
-{% endblock %}
+                            </section>
+              </main>
+
+
+                           
+                  <footer class="page-footer dark">
+                       <div class="container">
+                           <div class="row">
+                            <div class="col-sm-3 col-lg-12">
+                            <h5>Get started</h5>
+                           <ul>
+                            <li><a href="{%url 'home' %}">Home</a></li>
+                            <li><a href="{%url 'about' %}">About Us</a></li>
+                            <li><a href="{%url 'contact-us' %}">Contact Us</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="footer-copyright">
+                  <p>© 2023 Copyright Text</p>
+              </div>
+          </footer>
+          </body>
+</html>

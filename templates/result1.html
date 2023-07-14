@@ -1,28 +1,87 @@
-<h1>Form data submitted successfully!</h1>
-<h1>Heart Disease Prediction Result</h1>
-{% block content %}
-{% if heart_damage1 %}
-   <p>Your heart is 100% weak. Please go to the nearest heart hospital for a check-up. 
-   This system is not 100% accurate, so please contact your nearest doctor.</p>
 
-{% elif heart_damage2 %}
-   <p>Your heart is 50% weak. Please go to the nearest heart hospital for a check-up. 
-   This system is not 100% accurate, so please contact your nearest doctor.</p>
-{% elif heart_damage3 %}
-    <p>Your heart is 75% weak. Please go to the nearest heart hospital for a check-up. 
-    This system is not 100% accurate, so please contact your nearest doctor.</p>
-{% elif heart_damage4 %}
-  <p>Your heart is 25% weak. Please go to the nearest heart hospital for a check-up. 
-    This system is not 100% accurate, so please contact your nearest doctor.</p>
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Heart-Disease-Prediction-System</title>
+    <link rel="stylesheet" href="/static/css/predictionForm.min.css">
+    <link rel="stylesheet" href="/static/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/vanilla-zoom.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
+
+<body>
  
 
-{% else %}
-    <p>Re-Enter the Value.</p>
-{% endif %}
-{% endblock %}
+    <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar navbar-light">
+        <div class="container"><a class="navbar-brand logo pb-lg-0 me-lg-5 pe-lg-0 active" href="/">Heart Disease Prediction System&nbsp;</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{%url 'home' %}">Prediction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{%url 'features'%}">Features</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{%url 'about' %}">About Us</a>
+                    <li class="nav-item"><a class="nav-link" href="{%url 'contact-us' %}">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    main class="page">
+        <section class="clean-block features">
+            <div class="row justify-content-center">
+                <div class="col">
+                <h1>Form data submitted successfully!</h1>
+                <h1>Heart Disease Prediction Result</h1>
+                  {% block content %}
+                  {% if heart_damage1 %}
+                     <p>Your heart is 100% weak. Please go to the nearest heart hospital for a check-up. 
+                     This system is not 100% accurate, so please contact your nearest doctor.</p>
+                  
+                  {% elif heart_damage2 %}
+                     <p>Your heart is 50% weak. Please go to the nearest heart hospital for a check-up. 
+                     This system is not 100% accurate, so please contact your nearest doctor.</p>
+                  {% elif heart_damage3 %}
+                      <p>Your heart is 75% weak. Please go to the nearest heart hospital for a check-up. 
+                      This system is not 100% accurate, so please contact your nearest doctor.</p>
+                  {% elif heart_damage4 %}
+                    <p>Your heart is 25% weak. Please go to the nearest heart hospital for a check-up. 
+                      This system is not 100% accurate, so please contact your nearest doctor.</p>
+                   
+                  
+                  {% else %}
+                      <p>Re-Enter the Value.</p>
+                  {% endif %}
+                  {% endblock %}
+                </div>
+            </div>
+</section>
+</main>
 
+<footer class="page-footer dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-lg-12">
+                <h5>Get started</h5>
+                <ul>
+                     <li><a href="{%url 'home' %}">Home</a></li>
+                    <li><a href="{%url 'about' %}">About Us</a></li>
+                    <li><a href="{%url 'contact-us' %}">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>© 2023 Copyright Text</p>
+    </div>
+</footer>
+<script src="/staticbootstrap/js/bootstrap.min.js"></script>
+<script src="/static/js/baguetteBox.min.js"></script>
+<script src="/static/js/vanilla-zoom.js"></script>
+<script src="/static/js/theme.js"></script>
+</body>
 
-
+</html>
 
 
 

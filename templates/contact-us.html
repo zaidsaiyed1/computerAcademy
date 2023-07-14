@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Contact Us - Brand</title>
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
+    <link rel="stylesheet" href="/static/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="/static/css/vanilla-zoom.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar navbar-light">
+        <div class="container"><a class="navbar-brand logo pb-lg-0 me-lg-5 pe-lg-0" href="/">Heart Disease Prediction System&nbsp;</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{%url 'home' %}">Prediction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{%url 'features'%}">Features</a></li>
+                    <li class="nav-item"><a class="nav-link " href="{%url 'about' %}">About Us</a>
+                    <li class="nav-item"><a class="nav-link active" href="{%url 'contact-us' %}">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page contact-us-page">
+        <section class="clean-block clean-form dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Contact Us</h2>
+                </div>
+                <p>You Can give the feedback how is this system help you....</p>
+                <form method="post" action="../user_data/">
+                    {% csrf_token %}
+                    <div class="mb-3"><label class="form-label" for="name">Name</label><input class="form-control" type="text" id="ucname" name="ucname" data-bs-theme="light"></div>
+                    <div class="mb-3"><label class="form-label" for="Age">Age</label><input class="form-control" type="number" id="ucage" name="ucage" data-bs-theme="light"></div>
+                    <div class="mb-3"><label class="form-label" for="sex">Gender</label><input class="form-control" type="text" id="ucsex" name="ucsex" data-bs-theme="light"></div>
+                    <div class="mb-3"><label class="form-label" for="country">Country</label><input class="form-control" type="text" id="uccountry" name="uccountry" data-bs-theme="light"></div>
+                    <div class="mb-3"><label class="form-label" for="email">Email</label><input class="form-control" type="email" id="ucemail" name="ucemail" data-bs-theme="light"></div>
+                    <div class="mb-3"><label class="form-label" for="feedback">feedback</label><textarea class="form-control" id="ucfeedback" name="ucfeedback" data-bs-theme="light"></textarea></div>
+                    <div class="mb-3"><button class="btn btn-primary" type="submit">Send</button></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-lg-12">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="{%url 'home' %}">Pridiction</a></li>
+                        <li><a href="{%url 'about' %}">About Us</a></li>
+                        <li><a href="{%url 'contact-us' %}">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2023 Copyright Text</p>
+        </div>
+    </footer>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/js/baguetteBox.min.js"></script>
+    <script src="/static/js/vanilla-zoom.js"></script>
+    <script src="/static/js/theme.js"></script>
+</body>
+
+</html>
