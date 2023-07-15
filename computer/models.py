@@ -30,7 +30,7 @@ class Meta:
     db_table = "user_details"
 
 class user_data1(models.Model):
-    uname = models.CharField(max_length=30, default='NUll')
+    uname = models.CharField(max_length=20, default='NUll')
     ucountry = models.CharField(max_length=20, default='NUll')
     uage = models.IntegerField()
     usex = models.CharField(max_length=10, default='NUll')
