@@ -126,6 +126,7 @@ def user_data(request):
     udfeedb = request.POST['ucfeedback'];
     u = user_data1(uname=udname,ucountry=udcountry,uage=udage,usex=udsex,uemail=udemail,ufeedb=udfeedb);
     u.save();
+    print("hi")
     return render(request,'templates/result.html', {})
 
 
