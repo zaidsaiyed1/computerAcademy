@@ -30,12 +30,12 @@ class Meta:
     db_table = "user_details"
 
 class user_data1(models.Model):
-    uname = models.CharField(default='NUll')
-    ucountry = models.CharField(default='NUll')
+    uname = models.CharField(max_length=30, default='NUll')
+    ucountry = models.CharField(max_length=20, default='NUll')
     uage = models.IntegerField()
-    usex = models.CharField(default='NUll')
-    uemail = models.EmailField(default='NUll')
-    ufeedb = models.CharField( default='NUll')
+    usex = models.CharField(max_length=10, default='NUll')
+    uemail = models.EmailField(max_length=60, default='NUll')
+    ufeedb = models.CharField(max_length=200, default='NUll')
 
 class Meta:
     db_table = "user_data1"
