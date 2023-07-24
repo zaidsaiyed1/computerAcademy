@@ -26,7 +26,7 @@ def read_csv_file(file_path):
         for row in csv_reader:
             data.append(row)
     return data  
-#Section will check the data with the csv file data  
+#Section will check the data with the csv file data  to predict heart disease
 def calculate_heart_disease(request,data, user_data):
   
   heart_damage1 = False
@@ -115,7 +115,7 @@ def insertuser(request):
   predict =calculate_heart_disease(request,data, user_data)
   return predict
  #return 
-
+# this fubction is to store the user feedback in the database
 def user_data(request):
   #if request.method == 'POST':
     udname =  request.POST['ucname'];
