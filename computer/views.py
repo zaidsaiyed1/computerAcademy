@@ -62,7 +62,7 @@ def calculate_heart_disease(request,data, user_data):
            elif(icountry ==user_data['ucountry']  or iage == user_data['uage'] or isex ==user_data['usex']  or icp == user_data['ucp'] or idiabi == user_data['udiabi'] or isob == user_data['usob'] or ibps ==user_data['ubps']  or ifati ==user_data['ufati'] or inov ==user_data['unov']  or iioh ==user_data['uioh'] or ies ==user_data['ues'] or ihhd == user_data['uhhd']):
               heart_damage4 = True
               break
-
+ 
   if heart_damage1 :
         return render(request, 'templates/result1.html',{'heart_damage1':heart_damage1})
   elif heart_damage2:
