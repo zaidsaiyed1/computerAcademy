@@ -72,8 +72,7 @@ def calculate_heart_disease(request,data, user_data):
   elif heart_damage4:
         return render(request, 'templates/result1.html',{'heart_damage4':heart_damage4})
 
-    # No match found
-  #return render(request, 'templates/result.html')
+   
 
   #this section i sused to store the user value in the databse 
 

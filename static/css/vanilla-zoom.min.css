@@ -32,3 +32,10 @@
   margin-bottom: 5px;
 }
 
+@media (max-width: 600px) 
+{
+body {
+max-width: 600px;
+
+}
+}

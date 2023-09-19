@@ -210,11 +210,16 @@
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity));
 }
-
 .clean-block.clean-catalog .products .row:first-of-type {
 }
 
 .clean-product-item .product-name a {
   color: var(--bs-body-color);
 }
+@media (max-width: 600px) 
+{
+body {
+max-width: 600px;
 
+}
+}

@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-*5b==6qds=tasu4+=$1)8qtzeeyr%*skmmluha7$rtf1znm6*z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -77,23 +77,23 @@ WSGI_APPLICATION = 'computerAcademy.wsgi.application'
 # Database
 #https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-    # 'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
-    # }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'heart_system',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-        'USER': 'root',
-        'PASSWORD': 'saiyed',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'heart_system',
+#        'HOST': '127.0.0.1',
+#        'PORT': '3306',
+#        'USER': 'root',
+#        'PASSWORD': 'saiyed',
+#    }
+#}
+#
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
